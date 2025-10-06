@@ -9,6 +9,8 @@ readme = "README.md"
 requires-python = ">=3.11,<3.14.0"
 dependencies = [
     "django",
+    "whitenoise[brotli]",
+    "gunicorn",
 ]
 
 [tool.pytest.ini_options]
@@ -21,3 +23,5 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.group.dev.dependencies]
 ipython = "*"
 pytest-django = "*"
+dj-database-url = "*"
+psycopg2-binary = "*"
