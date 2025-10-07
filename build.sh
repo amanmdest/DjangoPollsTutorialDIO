@@ -1,8 +1,8 @@
-#!/usr/bin/env bash
+/#!/usr/bin/env bash
 set -o errexit
 
 pip install poetry -U
-poetry install --no-root --no-dev
+poetry install --no-root
 
 python manage.py collectstatic --no-input
 
